@@ -17,6 +17,16 @@ class ApiProvider {
         .toList();
   }
 
+  void addComment(String data) async {
+    try {
+      final Response response = await Dio()
+          .post('https://cambium.co.il/test/testAssignComment', data: data);
+      return;
+    } catch (e, stk) {
+      return;
+    }
+  }
+
   void increment() {
     _start += 20;
     _end += 20;

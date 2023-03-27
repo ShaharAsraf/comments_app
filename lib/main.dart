@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       GoRoute(
         path: "/",
         builder: (context, state) => HomeScreen(),
+        //asd
       ),
     ],
   );
